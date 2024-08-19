@@ -64,10 +64,16 @@ formulario.addEventListener("submit",function(event){
     //let mensaje = `Su nombre ${name}, su email es ${email}, su telefono es ${phone} y ha escrito ${textoarea}`
 
    // alert(mensaje)
-
-
 })
 
+let btn = document.getElementById("boton-icono")
+let icono =document.querySelectorAll(".cajaicono")
+
+btn.onclick = function(){
+  for(i=0;i<icono.length;i++){
+    icono[i].className= "mododetrabajo_caja_icono-secondary bi bi-book-half text-center icono" 
+  }                               
+}
 
 
 
