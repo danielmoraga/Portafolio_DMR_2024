@@ -262,6 +262,12 @@ body{
 }
 /***** End modal *****/
 
+/***** estilos especiales *****/  
+.modal{
+    top:30%;
+  }
+  /***** End estilos especiales *****/
+
 
 /***** Media queries *****/  
 @media (min-width: 768px) { 
