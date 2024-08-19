@@ -276,7 +276,7 @@
     <!--formulario-->
 
     <section class="formulario mt-5" id="formulario">
-        <form class="formulario_contenedor container" action="">
+        <form class="formulario_contenedor container" action="" id="form">
             <div class="row">
 
                 <div class="col-12 col-md-6">
@@ -307,7 +307,9 @@
                             placeholder="+56 912345678">
                     </div>
 
-                    <button type="submit" class="btn btn-primary-outline">Enviar</button>
+                    <button type="submit" class="btn btn-primary-outline" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Enviar
+                      </button>
                 </div>
 
 
@@ -333,7 +335,7 @@
     </footer>
 
 
-    <!--modal-->
+    <!--modal1-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -351,6 +353,8 @@
           </div>
         </div>
       </div>
+    <!--modal 2-->
+
 
      <script src="https://kit.fontawesome.com/a9f90c30f7.js" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
