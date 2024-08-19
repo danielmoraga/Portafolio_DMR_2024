@@ -101,16 +101,29 @@ body{
 }
 
 .descripcionRRSS_fotoPerfil {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex;    
+    flex-direction: column;  
+    justify-content: center;             
     align-items: center;
-
 }
+.contenedorRRSS{
+    display: flex;
+    flex-direction: row;
+    margin-top: -20%;
+}
+
+
 .descripcionRRSS_caja{
     padding: 1rem;
     background-color: #A53DFF;
+    border-radius: .4rem;
+    margin: .4rem;
 }
+
+.descripcionRRSS_caja i{
+    color: #fff;
+}
+
 .descripcionRRSS_contenedor{
     background-color: #fff;
     padding: 4rem;
