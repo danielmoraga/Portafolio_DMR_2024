@@ -11,7 +11,8 @@ contacto.onclick = function(){
 
 
 cambio.onclick = function(){
-    anadir.style.cssText=  "color:blue; font-size:1rem; line-height:1rem; font-weight:200; margin:2rem 0"                                     
+    anadir.classList.toggle("descripcionRRSS_textos-cambios")     
+                              
 }
 
 
@@ -70,36 +71,54 @@ let icono =document.querySelectorAll(".cajaicono")
 
 btn.onclick = function(){
   for(i=0;i<icono.length;i++){
-    icono[i].classList.add("icono") 
+    icono[i].classList.toggle("icono") 
   }                               
 }
 
 
 ///Cards//
 let datosCards =[
-  {titulo:"Primer trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/238/300/300"},
-  {titulo:"Segundo trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/239/300/300"},
-  {titulo:"Tercer trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/240/300/300"},
-  {titulo:"Cuarto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/241/300/300"},
-  {titulo:"Quinto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/242/300/300"},
-  {titulo:"Sexto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/243/300/300"},
+  {titulo:"Primer trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/238/300/300",modal:"modal1"},
+  {titulo:"Segundo trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/239/300/300",modal:"modal2"},
+  {titulo:"Tercer trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/240/300/300",modal:"modal3"},
+  {titulo:"Cuarto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/241/300/300",modal:"modal4"},
+  {titulo:"Quinto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/242/300/300",modal:"modal5"},
+  {titulo:"Sexto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/243/300/300",modal:"modal6"},
 ]
 
 for(i=0;i<datosCards.length;i++){
   console.log(datosCards[i].titulo)
 
   let card =document.querySelector(".portafolio_cards")
+  let modal=document.querySelector(".modalescards")
   
   card.innerHTML += ` <div class="portafolio_card  card">
                         <img class="portafolio_card_image" src="${datosCards[i].imagen}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${datosCards[i].titulo}</h5>
                         <p class="card-text">${datosCards[i].parrafo}</p>
-                            <button type="button" class="btn btn-primary-outline" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-primary-outline" data-bs-toggle="modal" data-bs-target="#${datosCards[i].modal}">
                                 Ver trabajo
                               </button>
                     </div>
                 </div>`
+
+ modal.innerHTML += ` <div class="modal fade" id="${datosCards[i].modal}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">${datosCards[i].titulo}</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <img class="portafolio_card_image" src="${datosCards[i].imagen}" class="card-img-top" alt="...">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>`
 }
 
 

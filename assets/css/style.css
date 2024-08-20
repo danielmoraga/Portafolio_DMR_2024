@@ -139,6 +139,13 @@ body{
     width: 100%;
     border-radius: 1rem;
 }
+.descripcionRRSS_textos-cambios{
+    color:blue; 
+    font-size:1rem; 
+    line-height:1rem; 
+    font-weight:200; 
+    margin:2rem 0
+}
 /***** End Descripcion y RRSS *****/
 
 
