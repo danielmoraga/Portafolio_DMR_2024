@@ -16,7 +16,6 @@ cambio.onclick = function(){
 
 
 
-
 ///formulario//
 
 let formulario = document.querySelector("#form")
@@ -71,10 +70,37 @@ let icono =document.querySelectorAll(".cajaicono")
 
 btn.onclick = function(){
   for(i=0;i<icono.length;i++){
-    icono[i].className= "mododetrabajo_caja_icono-secondary bi bi-book-half text-center icono" 
+    icono[i].classList.add("icono") 
   }                               
 }
 
+
+///Cards//
+let datosCards =[
+  {titulo:"Primer trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/238/300/300"},
+  {titulo:"Segundo trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/239/300/300"},
+  {titulo:"Tercer trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/240/300/300"},
+  {titulo:"Cuarto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/241/300/300"},
+  {titulo:"Quinto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/242/300/300"},
+  {titulo:"Sexto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/243/300/300"},
+]
+
+for(i=0;i<datosCards.length;i++){
+  console.log(datosCards[i].titulo)
+
+  let card =document.querySelector(".portafolio_cards")
+  
+  card.innerHTML += ` <div class="portafolio_card  card">
+                        <img class="portafolio_card_image" src="${datosCards[i].imagen}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${datosCards[i].titulo}</h5>
+                        <p class="card-text">${datosCards[i].parrafo}</p>
+                            <button type="button" class="btn btn-primary-outline" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ver trabajo
+                              </button>
+                    </div>
+                </div>`
+}
 
 
 
