@@ -486,6 +486,11 @@ background-size: cover;
     .desripcionRRSS_textos{
         margin-top: 0;
     }
+    .fotoPerfil{
+        width: 100%;
+        border-radius: 1rem;
+        margin-top: -40px;
+    }
 
     .mododetrabajo_caja{
         display: flex;
