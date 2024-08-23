@@ -325,6 +325,28 @@ background-size: cover;
               transform: rotate(0deg);
     }
   }
+  @keyframes hero_tags {
+    0%   {left:-100vw;}
+    100% {left:0vw;}
+  }
+
+  @keyframes parcajas-1 {
+    0%   {
+          top: 0vh;
+    }
+    100% {
+      top: -5vh;
+    }
+  }
+  @keyframes parcajas-2 {
+    0%   {
+          top: 0vh;
+    }
+    100% {
+      top: 5vh;
+    }
+  }
+
 
   @keyframes cards {
     0%   {
@@ -334,11 +356,6 @@ background-size: cover;
       top: 0vh;
     }
   }
-
- /* @keyframes derecha2 {
-    0%   {right:-100vw;}
-    100% {right:0vw;}
-  }*/
 
   @keyframes ingresoizq {
     0%   {left:-100vw;}
@@ -368,6 +385,25 @@ background-size: cover;
   position: relative;
 }
 
+.clientes{
+    animation: ingresoizq linear both;
+    animation-duration: 1.2s;
+    position: relative;
+}
+
+.trabajos{
+    animation: ingresoizq linear both;
+    animation-duration: 1s;
+    position: relative;
+}
+
+
+.years{
+    animation: ingresoizq linear both;
+    animation-duration: .8s;
+    position: relative;
+}
+
 .descripcionRRSS_contenedor{
     animation: ingresoizq linear both;
     animation-duration: 1s;
@@ -375,6 +411,20 @@ background-size: cover;
     animation-range: entry 100% cover 50%;
     position: relative;
   }
+  .parcajas-1{
+    animation: parcajas-1  linear both;
+    animation-duration: .1s;
+    animation-timeline: scroll();
+    animation-range: start 50% cover 50%;
+    position: relative;
+ } 
+ .parcajas-2{
+    animation: parcajas-2  linear both;
+    animation-duration: .1s;
+    animation-timeline: scroll();
+    animation-range: start 50% cover 50%;
+    position: relative;
+ } 
 
 
 .portafolio_card{
@@ -484,7 +534,7 @@ background-size: cover;
 
  }
 
-/***** End Footer *****/
+/***** End queries *****/
 
 
 
