@@ -78,12 +78,12 @@ btn.onclick = function(){
 
 ///Cards//
 let datosCards =[
-  {titulo:"Primer trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/238/300/300",modal:"modal1"},
-  {titulo:"Segundo trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/239/300/300",modal:"modal2"},
-  {titulo:"Tercer trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/240/300/300",modal:"modal3"},
-  {titulo:"Cuarto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/241/300/300",modal:"modal4"},
-  {titulo:"Quinto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/242/300/300",modal:"modal5"},
-  {titulo:"Sexto trabajo", parrafo:"lorem ipsum...", imagen:"https://picsum.photos/id/243/300/300",modal:"modal6"},
+  {titulo:"Barber Shop", parrafo:"https://danielmoraga.github.io/barbershop/", imagen:"./assets/img/port-1.jpg",modal:"modal1"},
+  {titulo:"Revista", parrafo:"https://danielmoraga.github.io/gigeo/", imagen:"./assets/img/port-2.jpg",modal:"modal2"},
+  {titulo:"Viajes Chile", parrafo:"https://danielmoraga.github.io/viajes_chile/", imagen:"./assets/img/port-3.jpg",modal:"modal3"},
+  {titulo:"Emprendimiento", parrafo:"https://danielmoraga.github.io/Emprendimiento/", imagen:"./assets/img/port-4.jpg",modal:"modal4"},
+  {titulo:"XDA", parrafo:"https://danielmoraga.github.io/tiendaxda/", imagen:"./assets/img/port-5.jpg",modal:"modal5"},
+  {titulo:"Diario", parrafo:"https://danielmoraga.github.io/diario_online/", imagen:"./assets/img/port-6.jpg",modal:"modal6"},
 ]
 
 for(i=0;i<datosCards.length;i++){
@@ -96,7 +96,6 @@ for(i=0;i<datosCards.length;i++){
                         <img class="portafolio_card_image" src="${datosCards[i].imagen}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${datosCards[i].titulo}</h5>
-                        <p class="card-text">${datosCards[i].parrafo}</p>
                             <button type="button" class="btn btn-primary-outline" data-bs-toggle="modal" data-bs-target="#${datosCards[i].modal}">
                                 Ver trabajo
                               </button>
@@ -111,7 +110,7 @@ for(i=0;i<datosCards.length;i++){
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-               <img class="portafolio_card_image" src="${datosCards[i].imagen}" class="card-img-top" alt="...">
+               <a href="${datosCards[i].parrafo}" target="_blank"><img class="portafolio_card_image w-100" src="${datosCards[i].imagen}" class="card-img-top" alt="..."></a>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

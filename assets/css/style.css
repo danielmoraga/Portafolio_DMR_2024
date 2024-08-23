@@ -1,5 +1,5 @@
 body{
-    font-family: "Open Sans", sans-serif; 
+    font-family: "Poppins", sans-serif;
 }
 
 /***** navbar *****/  
@@ -53,9 +53,13 @@ body{
 /***** Hero *****/  
 .hero{
     padding: 4rem 2rem;
-    background-color: #66F3D1;
+   /* background-color: #66F3D1;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23bcfae8'/%3E%3Cstop offset='1' stop-color='%23bcfae8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23b7ade2'/%3E%3Cstop offset='1' stop-color='%23b7ade2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f2adf9'/%3E%3Cstop offset='1' stop-color='%23f2adf9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2366F3D1'/%3E%3Cstop offset='1' stop-color='%2366F3D1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23DA4DF1'/%3E%3Cstop offset='1' stop-color='%23DA4DF1' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
-    background-size: cover;
+    background-size: cover;*/
+    background-color: #81FFF0;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23c0fff8'/%3E%3Cstop offset='1' stop-color='%23c0fff8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237f8cf8'/%3E%3Cstop offset='1' stop-color='%237f8cf8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f3bff8'/%3E%3Cstop offset='1' stop-color='%23f3bff8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2381FFF0'/%3E%3Cstop offset='1' stop-color='%2381FFF0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23E77EF1'/%3E%3Cstop offset='1' stop-color='%23E77EF1' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 .hero_info{
     display: flex;
@@ -94,10 +98,16 @@ body{
 /***** Descripcion y RRSS *****/  
 .descripcionRRSS{
     padding: 2rem;
-    background-color: #FFF8AA;
+   /* background-color: #FFF8AA;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23fffbd5'/%3E%3Cstop offset='1' stop-color='%23fffbd5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23fa7a88'/%3E%3Cstop offset='1' stop-color='%23fa7a88' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23eda6f8'/%3E%3Cstop offset='1' stop-color='%23eda6f8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFF8AA'/%3E%3Cstop offset='1' stop-color='%23FFF8AA' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23DA4DF1'/%3E%3Cstop offset='1' stop-color='%23DA4DF1' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
     background-attachment: fixed;
+    background-size: cover;*/
+
+    background-color: #FEFBDD;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23d7fcd5'/%3E%3Cstop offset='1' stop-color='%23d7fcd5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f9b1bc'/%3E%3Cstop offset='1' stop-color='%23f9b1bc' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23abb5f5'/%3E%3Cstop offset='1' stop-color='%23abb5f5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FEFBDD'/%3E%3Cstop offset='1' stop-color='%23FEFBDD' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23CDF9F7'/%3E%3Cstop offset='1' stop-color='%23CDF9F7' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D988F1'/%3E%3Cstop offset='1' stop-color='%23D988F1' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
     background-size: cover;
+
 }
 
 .descripcionRRSS_fotoPerfil {
@@ -165,6 +175,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    margin-top: 2rem;
 }
 .mododetrabajo_caja{
     display: flex;
@@ -284,6 +295,55 @@ body{
     50%  {left:0px; right:0px;}
     100%  {left:0px; right:20px;}
   }
+  @keyframes animaiconos {
+    0%   {top:0px; botom:0px;}
+    25%  {top:20px;botom:0px;}
+    50%  {top:0px; botom:0px;}
+    100% {top:0px;botom:20px;}
+  }
+  @keyframes hero {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+
+    25%{
+      -webkit-transform: rotate(-10deg);
+              transform: rotate(-10deg);
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    75% {
+      -webkit-transform: rotate(20deg);
+              transform: rotate(20deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  }
+
+  @keyframes cards {
+    0%   {
+          top: 10vh;
+    }
+    100% {
+      top: 0vh;
+    }
+  }
+
+ /* @keyframes derecha2 {
+    0%   {right:-100vw;}
+    100% {right:0vw;}
+  }*/
+
+  @keyframes ingresoizq {
+    0%   {left:-100vw;}
+    100% {left:0vw;}
+  }
 .logonav{
     position: relative;
     animation-name: animalogo;
@@ -292,12 +352,6 @@ body{
     animation-timing-function: ease-in-out;
 }
 
-@keyframes animaiconos {
-    0%   {top:0px; botom:0px;}
-    25%  {top:20px;botom:0px;}
-    50%  {top:0px; botom:0px;}
-    100% {top:0px;botom:20px;}
-  }
 .icono{
     position: relative;
     animation-name: animaiconos;
@@ -305,6 +359,48 @@ body{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
+.hero_image{
+  animation: hero  linear both;
+  animation-duration: .3s;
+  animation-timeline: scroll();
+  animation-range: start 50% cover 50%;
+  position: relative;
+}
+
+.descripcionRRSS_contenedor{
+    animation: ingresoizq linear both;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 100% cover 50%;
+    position: relative;
+  }
+
+
+.portafolio_card{
+  animation: cards  linear both;
+  animation-duration: 1s;
+  animation-timeline: view();
+  animation-range: start 50% cover 50%;
+  position: relative;
+}
+
+.mododetrabajo_texto{
+  animation: ingresoizq linear both;
+  animation-duration: 1s;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  position: relative;
+
+}
+.mododetrabajo_cajas{
+  animation: derecha2  linear both;
+  animation-duration: 1s;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  position: relative;
+}
+
 
 /***** End animación *****/
 
@@ -349,6 +445,7 @@ body{
         background-color: #fff;
         border-radius: 1rem;
         padding: 1rem;
+        margin-top: 0;
     
     }
 
